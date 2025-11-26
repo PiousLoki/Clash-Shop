@@ -1,0 +1,75 @@
+/*signos de ayuda: <> ""/ {}*/
+@font-face
+{
+    font-family: Roboto;
+    src: url( Roboto-VariableFont_wdth,wght.ttf);
+}
+body {
+    margin: 0;
+    padding-top: 70px;
+    font-family: Roboto;
+    background-color: #202224;
+    color: rgb(200, 200, 200);
+
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    background-color: #202224;
+    border-bottom: 1px solid #202224;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    color: rgb(200, 200, 200);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+.logo img {
+    height: 40px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+.menu a {
+    color: rgb(200, 200, 200);
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: rgb(255, 255, 255);
+    }
+
+.logo a{
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    
+}
+.logo a ::hover{
+    color: rgb(255, 255, 255);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 1111px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/*signos de ayuda: <> ""/ {}*/

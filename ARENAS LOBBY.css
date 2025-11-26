@@ -1,0 +1,61 @@
+/*signos de ayuda: <> ""/ {}*/
+@font-face
+{
+    font-family: Roboto;
+    src: url( Roboto-VariableFont_wdth,wght.ttf);
+}
+body{
+    background-color: #202224;
+    color: rgb(200, 200, 200);
+}
+.Arenas
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+    p
+    {
+        font-family: Roboto;
+    }
+    img
+    {
+        width: 200px;
+        height: 200px;
+        transition: 0.5s;
+    }
+
+}
+
+.Arenas{
+ 
+    img:hover{
+        transform: scale(1.2);
+        transition: 0.75s;
+
+
+    }
+}
+.Arena
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    background-color: #202224;;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+/*signos de ayuda: <> ""/ {}*/

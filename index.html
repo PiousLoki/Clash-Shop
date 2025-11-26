@@ -1,0 +1,106 @@
+<!--signos de ayuda: <> ""/-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Clash Shop</title>
+    <link rel="stylesheet" href="MENU.css">
+
+    <!-- ESTILOS DEL CARRUSEL -->
+    <style>
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            height: 300px;
+            margin: 40px auto;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .carousel-track {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/otros/logo del royale api.png" alt="Clash Shop" height="40">
+            <a href="MENU.html">Clash Shop</a>
+        </div>
+        <nav class="menu">
+            <a href="ARENAS LOBBY.html">Arenas</a>
+            <a href="#">Mazos</a>
+            <a href="#">Actualizaciones</a>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Clash Shop</h3>
+        <h4>Los mejores mazos para los mejores jugadores</h4>
+
+
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="slide" style="background-image: url('imagenes/otros/');"></div>
+                <div class="slide" style="background-image: url('imagenes/otros/');"></div>
+                <div class="slide" style="background-image: url('imagenes/otros/');"></div>
+            </div>
+
+            <button class="carousel-btn prev">〈</button>
+            <button class="carousel-btn next">〉</button>
+        </div>
+
+    </main>
+
+    <!-- 🔥 JAVASCRIPT DEL CARRUSEL -->
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.slide');
+        const nextButton = document.querySelector('.next');
+        const prevButton = document.querySelector('.prev');
+
+        let index = 0;
+
+        function showSlide(n) {
+            index = (n + slides.length) % slides.length;
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        nextButton.onclick = () => showSlide(index + 1);
+        prevButton.onclick = () => showSlide(index - 1);
+
+        // Auto play cada 4 segundos
+        setInterval(() => showSlide(index + 1), 4000);
+    </script>
+
+</body>
+</html>
+<!--signos de ayuda: <> ""/ {}-->
