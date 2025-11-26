@@ -70,20 +70,41 @@
         <h4>Los mejores mazos para los mejores jugadores</h4>
 
 
-        <div class="carousel">
-            <div class="carousel-track">
-                <div class="slide" style="background-image: url(imagenes/otros/Mini\ Pekka\ banner.png);"></div>
-                <div class="slide" style="background-image: url(imagenes/otros/gigante\ banner.png);"></div>
-                <div class="slide" style="background-image: url(imagenes/otros/caballero\ banner.png);"></div>
+<!-- CARRUSEL ESTILO ROYALEAPI (pantalla completa y épico) -->
+<div class="hero-carousel">
+    <div class="carousel-track">
+        <!-- === IMAGEN 1 === -->
+        <div class="hero-slide" style="background-image: url('imagenes/mazos/Arena 15 Lava Clone.png');">
+            <div class="hero-content">
+                <h1>Lava Clone</h1>
+                <p>El mazo más fuerte de Arena 15</p>
             </div>
-
-            <button class="carousel-btn prev">〈</button>
-            <button class="carousel-btn next">〉</button>
         </div>
+
+        <!-- === IMAGEN 2 === -->
+        <div class="hero-slide" style="background-image: url('imagenes/arenas/arena 18.webp');">
+            <div class="hero-content">
+                <h1>Arena Legendaria</h1>
+                <p>Donde nacen los campeones</p>
+            </div>
+        </div>
+
+        <!-- === IMAGEN 3 === -->
+        <div class="hero-slide" style="background-image: url('imagenes/mazos/Arena 7 Giant Balloon Musk beatdown.png');">
+            <div class="hero-content">
+                <h1>Giant Balloon Beatdown</h1>
+                <p>Clásico imbatible desde Arena 7</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones -->
+    <button class="carousel-btn prev">❮</button>
+    <button class="carousel-btn next">❯</button>
+</div>
 
     </main>
 
-    <!-- 🔥 JAVASCRIPT DEL CARRUSEL -->
     <script>
         const track = document.querySelector('.carousel-track');
         const slides = document.querySelectorAll('.slide');

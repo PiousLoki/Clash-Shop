@@ -58,14 +58,94 @@ header {
     color: rgb(255, 255, 255);
 }
 
-.carousel {
+.hero-carousel {
     position: relative;
     width: 100%;
-    max-width: 1200px;
-    height: 1111px;
-    margin: 40px auto;
+    height: 100vh;                    /* Pantalla completa */
     overflow: hidden;
-    border-radius: 12px;
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.hero-slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-slide::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+/* Botones elegantes */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.carousel-btn:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev { left: 30px; }
+.next { right: 30px; }
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.8rem; }
+    .hero-content p { font-size: 1.3rem; }
+    .carousel-btn { width: 50px; height: 50px; font-size: 28px; }
 }
 
 /*signos de ayuda: <> ""/ {}*/
