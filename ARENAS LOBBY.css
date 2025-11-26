@@ -1,10 +1,6 @@
 /*signos de ayuda: <> ""/ {}*/
-@font-face
-{
-    font-family: Roboto;
-    src: url( Roboto-VariableFont_wdth,wght.ttf);
-}
 body{
+    font-family: 'Roboto', sans-serif !important;
     background-color: #202224;
     color: rgb(200, 200, 200);
 }
