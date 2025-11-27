@@ -78,7 +78,7 @@ main {
 }
 
 .slider h2 {
-  color: #fdd835;
+  color: #ffffff;
   margin-bottom: 15px;
   font-size: 2rem;
 }
@@ -86,8 +86,8 @@ main {
 .slider-container {
   position: relative;
   overflow: hidden;
-  width: 95%; /* ajusta al contenedor padre */
-  max-width: 900px; /* opcional */
+  width: 95%;
+  max-width: 900px; 
   margin: 0 auto;
   border-radius: 15px;
 }
@@ -98,8 +98,8 @@ main {
 }
 
 .slides img {
-  width: 100%;  /* ocupa el ancho visible */
-  flex-shrink: 0; /* evita que se achique */
+  width: 100%; 
+  flex-shrink: 0; 
   border-radius: 10px;
 }
 
@@ -117,11 +117,13 @@ main {
   padding: 10px;
   border-radius: 50%;
   transition: background-color 0.3s;
+  opacity: 0.4;
 }
 
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0,7;
 }
 
 .prev {
