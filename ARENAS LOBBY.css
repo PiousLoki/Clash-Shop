@@ -1,7 +1,7 @@
 /*signos de ayuda: <> ""/ {}*/
 body{
     font-family: 'Roboto', sans-serif !important;
-    background-color: #202224;
+    background-color: #2e3233;
     color: rgb(200, 200, 200);
 }
 .Arenas
@@ -46,7 +46,7 @@ header {
     top: 0;
     left: 0;
     width: 97%;
-    background-color: #202224;;
+    background-color:#2e3233;
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;

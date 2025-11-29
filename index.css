@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding-top: 70px;
     font-family: Roboto;
-    background-color: #202224;
+    background-color: #2e3233;
     color: rgb(200, 200, 200);
 
 }
@@ -13,8 +13,8 @@ header {
     top: 0;
     left: 0;
     width: 97%;
-    background-color: #202224;
-    border-bottom: 1px solid #202224;
+    background-color: #2e3233;
+    border-bottom: 1px solid #2e3233;
     display: flex;
     justify-content: space-between;
     align-items: center;

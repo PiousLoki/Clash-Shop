@@ -1,7 +1,7 @@
 /*signos de ayuda: <> ""/ {}*/
 body{
     font-family: 'Roboto', sans-serif !important;
-    background-color: #202224;;
+    background-color: #2e3233;
     color: rgb(200, 200, 200);
 
 }
@@ -21,7 +21,7 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color:#202224;
+    background-color:#2e3233;
     img{
     width: 250px;
     height: 250px;

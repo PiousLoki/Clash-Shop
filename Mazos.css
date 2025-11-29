@@ -1,11 +1,3 @@
-/*signos de ayuda: <> ""/ {}*/
-h1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
 header {
     position: fixed;
     top: 0;
@@ -19,4 +11,12 @@ header {
     padding: 10px 20px;
     z-index: 1000;
     color: #2e3233;
+}
+Mazos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 50px;
+    justify-content: center;
 }
