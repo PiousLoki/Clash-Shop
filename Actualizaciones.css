@@ -1,22 +1,85 @@
-/*signos de ayuda: <> ""/ {}*/
-h1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 97%;
-    background-color: #2e3233;
-    border-bottom: 1px solid #2e3233;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    z-index: 1000;
-    color: #2e3233;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            background: #1a1a1a;
+            color: #f1f1f1;
+        }
+
+        header {
+            width: 100%;
+            padding: 15px 30px;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 0 10px #000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .logo a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #ccc;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .menu a:hover {
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 900;
+            margin-bottom: 30px;
+            color: #ffd047;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #ffcf4d;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #2a2a2a;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border-left: 5px solid #ffdc6e;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            opacity: 0.4;
+            font-size: 10px;
+        }
